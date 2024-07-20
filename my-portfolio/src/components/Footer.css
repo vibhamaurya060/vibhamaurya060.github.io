@@ -1,0 +1,16 @@
+/* Footer.css */
+.footer {
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    padding: 1rem; /* Padding for spacing */
+    text-align: center; /* Center align text */
+   /* Make footer fixed */
+    width: 97.8%; /* Full width */
+    bottom: 0; /* Stick to bottom */
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  .footer span {
+    font-size: 1rem; /* Adjust font size as needed */
+  }
+  
