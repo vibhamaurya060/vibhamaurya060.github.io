@@ -100,8 +100,12 @@
   text-align: left;
   text-decoration: none;
   color: rgb(107, 106, 106);
-  margin-right: 100%;
+  margin-right: 98%;
   font-weight: 800;
+}
+
+.phoneEmail{
+  font-weight: 600;
 }
 
 

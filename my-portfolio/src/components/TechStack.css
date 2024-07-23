@@ -1,7 +1,7 @@
 .tech-stack {
     text-align: center;
     padding: 3rem;
-    background-color: #181818;
+    background-color: #fcf2e4;
     padding-bottom: 100px;
     padding-left: 6rem;
     padding-right: 6rem;
@@ -9,9 +9,9 @@
   }
   
   .tech-stack h2 {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem; 
     margin-bottom: 2.5rem;
-    color: #f8f9fc;
+    color: #181818;
     font-weight: 700;
     margin-top: 0px;
   }
@@ -25,10 +25,9 @@
   
   .tech-item {
     display: flex;
-    flex-direction: column; /* Changed to column for better alignment */
+    flex-direction: column; 
     align-items: center;
-    padding: 2.5rem; /* Increased padding */
-    border: 2px solid #ddd;
+    padding: 2.5rem; 
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,9 +41,8 @@
   }
   
   .tech-icon {
-    width: 80px; /* Adjusted icon size */
-    height: 80px; /* Adjusted icon size */
-    /* Added margin for spacing */
+    width: 80px;
+    height: 80px; 
   }
 
   

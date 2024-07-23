@@ -1,8 +1,8 @@
 /* Projects Section */
 .projects {
-  background-color: #fcf2e4; /* Light background */
-  color: #333; /* Dark text color */
-  padding: 50px 20px; /* Generous padding for better spacing */
+  background-color: #181818; 
+  color: #333; 
+  padding: 50px 20px; 
   text-align: center;
 }
 
@@ -10,7 +10,7 @@
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 20px;
-  color: #333; /* Dark color for heading */
+  color: #f6f4f4; 
 }
 
 /* Projects Container */
@@ -27,15 +27,15 @@
   border: 1px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 60%; /* Increased width */
+  max-width: 75%; 
   padding: 20px;
-  /* transition: transform 0.1s ease, box-shadow 0.1s ease; */
+  margin-top: 20px;
 }
 
 .project-card:hover {
-  /* transform: translateY(-10px); */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 
 .project-image {
   width: 100%;
@@ -61,10 +61,10 @@
   text-decoration: none;
   margin: 0 10px;
   font-weight: 800;
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .project-links a:hover {
   color: #0056b3;
-  transform: scale(1.1); /* Slightly increase size on hover */
+  transform: scale(1.1); 
 }

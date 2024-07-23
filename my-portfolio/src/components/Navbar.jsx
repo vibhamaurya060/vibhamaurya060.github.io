@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
-        <strong>Vibha Maurya</strong>
+        <strong>Vibha <span style={{color:"white"}}>Maurya</span></strong>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
