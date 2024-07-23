@@ -1,7 +1,7 @@
 .about {
   background-color: #fcf2e4;
   color: #000000; 
-  padding-top:  50px; 
+  padding-top:  65px; 
   text-align: center;
   padding-bottom: 50px;
  
@@ -73,8 +73,20 @@
   height: 42vh; 
   border: 2px solid #f39c12; 
   border-radius: 10px; 
+  animation: floatImage 4s ease-in-out infinite;
 }
 
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.4rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 
 .container {
   flex-direction: row; 

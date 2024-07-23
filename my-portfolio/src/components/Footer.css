@@ -2,9 +2,9 @@
 .footer {
     background-color: black; 
     color: white; 
-    padding: 1rem; 
+    padding: 1.5rem 1rem; 
+
     text-align: center; 
-   
     width: 97.8%;
     bottom: 0; 
     z-index: 1000;
