@@ -1,49 +1,131 @@
 .home {
   background-color: #181818;
-  color: white; 
-  height: 70vh; 
+  color: white;
+  min-height: 76vh;
   display: flex;
   flex-direction: column;
- padding-top: 100px; 
-  padding-left: 100px;
-  line-height: 18px;
+  justify-content: center;
+  padding: 0 100px;
+  line-height: 1.2;
   box-sizing: border-box;
-  
-
+  position: relative;
 }
 
 .home h4 {
   font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .home h1 {
-  font-size: 3.2rem;
-  margin-top: 15px;
+  font-size: 4rem;
+  margin: 10px 0;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
 .home p {
-  font-size: 1.7rem;
-  margin-top: 0;
+  font-size: 2rem;
+  margin: 15px 0 40px;
+  font-weight: 500;
 }
 
-
-.full{
+.full {
   color: orange;
+  position: relative;
+  padding-right: 5px;
 }
 
+.full::after {
+  content: "|";
+  animation: blink 1s infinite;
+  color: white;
+}
 
-.resume{
-  width: 150px;
-  height: 50px;
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.resume {
+  width: 180px;
+  height: 55px;
   background-color: orange;
   border: none;
   border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
 }
 
-.resume a{
+.resume:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(255, 165, 0, 0.4);
+  background-color: #ff9500;
+}
+
+.resume:active {
+  transform: translateY(1px);
+}
+
+.resume a {
   color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
+/* Responsive Design */
+@media (max-width: 992px) {
+  .home {
+    padding: 0 50px;
+  }
+  
+  .home h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 0 30px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+  }
+  
+  .home p {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h4 {
+    font-size: 1.2rem;
+  }
+  
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  
+  .home p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  
+  .resume {
+    width: 150px;
+    height: 50px;
+  }
+}

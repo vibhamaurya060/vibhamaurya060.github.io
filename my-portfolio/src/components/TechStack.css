@@ -1,48 +1,98 @@
+/* Tech Stack Section */
 .tech-stack {
-    text-align: center;
-    padding: 3rem;
-    background-color: #fcf2e4;
-    padding-bottom: 100px;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 65px;
-  }
-  
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fcf2e4;
+}
+
+/* Section Title with Underline */
+.tech-stack h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #181818;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Underline Effect */
+.tech-stack h2::after {
+  content: "";
+  width: 140px;
+  height: 4px;
+  background-color: #ff8800;  /* Adjust color as needed */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Tech List Container */
+.tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Individual Tech Item */
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Effects */
+.tech-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tech Icon */
+.tech-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .tech-stack h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 2.5rem;
-    color: #181818;
-    font-weight: 700;
-    margin-top: 0px;
-  }
-  
-  .tech-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4rem;
-  }
-  
-  .tech-item {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 2.5rem; 
-    border-radius: 12px;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .tech-item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border-color: #4a5568;
-  }
-  
-  .tech-icon {
-    width: 80px;
-    height: 80px; 
+      font-size: 2rem;
   }
 
-  
+  .tech-stack h2::after {
+      width: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-stack h2 {
+      font-size: 1.8rem;
+  }
+
+  .tech-stack h2::after {
+      width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack h2 {
+      font-size: 1.6rem;
+  }
+
+  .tech-stack h2::after {
+      width: 50px;
+      height: 3px;
+  }
+}
