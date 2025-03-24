@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className="footer-bottom">
+      <div className="footer-bottom"> 
         <p>&copy; {currentYear} Vibha Maurya. All Rights Reserved.</p>
         <p className="credit">Made with <i className="fas fa-heart"></i> and React</p>
       </div>
