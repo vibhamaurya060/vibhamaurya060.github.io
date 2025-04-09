@@ -31,11 +31,11 @@ const Footer = () => {
           <h4>Contact Me</h4>
           <div className="contact-item">
             <i className="fas fa-envelope"></i>
-            <p>vibha@example.com</p>
+            <p>vibhamaurya060@example.com</p>
           </div>
           <div className="contact-item">
             <i className="fas fa-phone"></i>
-            <p>+91 9876543210</p>
+            <p>6394522720</p>
           </div>
           <div className="contact-item">
             <i className="fas fa-map-marker-alt"></i>
@@ -46,7 +46,6 @@ const Footer = () => {
       
       <div className="footer-bottom"> 
         <p>&copy; {currentYear} Vibha Maurya. All Rights Reserved.</p>
-        <p className="credit">Made with <i className="fas fa-heart"></i> and React</p>
       </div>
     </footer>
   );
