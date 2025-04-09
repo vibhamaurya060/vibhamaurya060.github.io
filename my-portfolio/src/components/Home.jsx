@@ -16,7 +16,7 @@ const Home = () => {
       <h1>Vibha Maurya</h1>
       <p>And I'm a <span className='full'>{typeEffect}</span>
       </p>
-      <button className='resume'><a href='https://drive.google.com/file/d/1NoO0eECrOdzNG2PupSN_zRX6vwPUsOOa/view?usp=drive_link'  target="_blank">Resume</a></button>
+      <button className='resume'><a href='https://drive.google.com/file/d/1Qgw8UCcsQ-mWgZ9PBPjW6pS9NN9NIFr1/view?usp=sharing'  target="_blank">Resume</a></button>
     </section>
   );
 };
