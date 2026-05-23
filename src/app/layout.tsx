@@ -12,6 +12,9 @@ const font = Inter({
 export const metadata: Metadata = {
   title: "Vibha Portfolio",
   description: "Portfolio website using nextjs",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
