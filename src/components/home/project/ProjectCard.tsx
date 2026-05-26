@@ -1,6 +1,9 @@
 "use client"
 
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa6";
 
 type Props = {
     title: string;
@@ -40,7 +43,35 @@ const ProjectCard = ({
                     {description}
                 </p>
                 {/* tech stacks */}
+                 <div className="flex flex-wrap gap-2 mb-6">
+                    {techStack.map((tech)=>{
+                        return(
+                            <span key={tech} className="text-xs px-3 py-1 rounded-full bg-indigo-600 text-white font-medium">
+                                {tech}
+                            </span>
+                        )
+                    })}
+                 </div>
+                 {/* button */}
+                 <div className="flex gap-3">
+                    {demoUrl && (
+                        <Button asChild size={"sm"} className="flex-1">
+                            <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="w-4 h-4 mr-2" />
+                                Live Demo
+                            </a>
+                        </Button>
+                    )}
 
+                    {githubUrl && (
+                        <Button asChild variant={"outline"} size={"sm"} className="flex-1">
+                            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                                <FaGithub className="w-4 h-4 mr-2" />
+                                Github
+                            </a>
+                        </Button>
+                    )}
+                 </div>
             </div>
         </div>
     )

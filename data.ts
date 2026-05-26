@@ -6,14 +6,14 @@ import {
   Cpu,
   Database,
   GitBranch,
-  Globe, 
+  Globe,
   Layers,
   Layout,
   Mail,
   MapPin,
   Palette,
   Phone,
-  Server, 
+  Server,
   Terminal,
 } from "lucide-react";
 
@@ -80,44 +80,67 @@ export const experiences = [
     company: "Tech Company",
     period: "2025 - Present",
     description:
-      "Building responsive and scalable web applications using Next.js, TypeScript, and Tailwind CSS.",
+      "Developing responsive, scalable, and user-friendly web applications with modern frontend technologies. Working on reusable UI components, API integration, performance optimization, and creating seamless user experiences.",
     technologies: [
+      "React.js",
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "React",
-    ],
-  },
-
-  {
-    type: "project",
-    title: "Full-Stack Developer",
-    company: "Personal & Freelance Projects",
-    period: "2024 - Present",
-    description:
-      "Developed full-stack applications with authentication, APIs, dashboards, and database integration.",
-    technologies: [
-      "Node.js",
-      "Fastify",
-      "PostgreSQL",
-      "Prisma",
+      "JavaScript",
+      "Redux Toolkit",
+      "REST API",
+      "Git",
+      "GitHub",
     ],
   },
 
   {
     type: "education",
-    title: "Bachelor's Degree",
-    company: "Your College Name",
-    period: "2021 - 2025",
+    title: "Full-Stack Web Development Course",
+    company: "Self Learning & Online Training",
+    period: "2023 - 2024",
     description:
-      "Focused on web development, databases, software engineering, and modern JavaScript technologies.",
+      "Learned and built full-stack web applications with authentication, APIs, dashboards, and database integration using modern web technologies.",
     technologies: [
+      "HTML",
+      "CSS",
       "JavaScript",
-      "DBMS",
-      "OOPs",
-      "Web Development",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS",
+      "Fastify",
+      "PostgreSQL",
+      "Prisma",
+      "TypeScript",
+      "Git",
+      "GitHub",
     ],
   },
+
+  {
+  type: "education",
+  title: "Bachelor of Computer Applications (BCA)",
+  company: "Dr. Rammanohar Lohia Avadh University, Ayodhya",
+  period: "2019 - 2022",
+  description:
+    "Completed graduation with a strong foundation in computer applications, software development, database management, and modern web technologies.",
+  technologies: [
+    "C",
+    "C++",
+    "Java",
+    "JavaScript",
+    "DBMS",
+    "OOPs",
+    "Data Structures",
+    "Web Development",
+    "HTML",
+    "CSS", 
+  ],
+},
 ];
 
 export const footerSocialLinks = [
