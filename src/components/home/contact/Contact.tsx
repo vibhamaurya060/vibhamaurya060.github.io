@@ -1,6 +1,9 @@
 import SectionHeading from '@/components/helper/SectionHeading'
 import { Input } from "@/components/ui/input"
 import { contactInfo, socialLinks } from '../../../../data'
+import { Textarea } from '@/components/ui/textarea'
+import { Button } from '@/components/ui/button'
+import { Send } from 'lucide-react'
 
 const Contact = () => {
     return (
@@ -67,6 +70,22 @@ const Contact = () => {
                                     <Input id='email' name='email' placeholder='Enter your email' required className='bg-gray-100' />
                                 </div>
                             </div>
+                            <div className='space-y-2'>
+                              <label htmlFor='subject' className='text-sm font-medium'>
+                                Subject
+                              </label>
+                              <Input id='subject' name='subject' placeholder='Project Inquiry' required className='bg-gray-100'/>
+                            </div>
+                            <div className='space-y-2'>
+                              <label htmlFor='message' className='text-sm font-medium'>
+                                Message
+                              </label>
+                              <Textarea id='message' name='message' placeholder='Tell me about your project...' rows={5} required className='bg-gray-100 h-40'/>
+                            </div>
+                            <Button type='submit' size={"lg"} className='cursor-pointer'>
+                                <Send className='w-4 h-4 mr-2'/>
+                                Send Message
+                            </Button>
                         </form>
                     </div>
                 </div>

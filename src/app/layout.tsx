@@ -4,6 +4,7 @@ import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
 import ResponciveNav from "@/components/home/navbar/ResponciveNav";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/home/footer/Footer";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Provider>
           <ResponciveNav />
           {children}
+          <Footer/>
         </Provider>
       </body>
     </html>
