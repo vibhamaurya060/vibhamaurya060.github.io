@@ -26,7 +26,6 @@ const Footer = () => {
         </div>
         <div className='mt-8 pt-8 border-t border-gray-300 dark:border-gray-800 text-center'>
             <p className='text-sm text-muted-foreground'> © {new Date().getFullYear()} All rights reserved.</p>
-
         </div>
      </div>
     </footer>
